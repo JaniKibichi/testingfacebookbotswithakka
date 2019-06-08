@@ -1,0 +1,1582 @@
+{
+    "version" : "1.1.2",
+    "project" : {
+        "name" : "airtime-fsm-test",
+        "directory" : "/home/grahamingokho/code/airtime-fsm",
+        "sources" : [
+            "/home/grahamingokho/code/airtime-fsm/src/test/scala-2.12",
+            "/home/grahamingokho/code/airtime-fsm/src/test/scala",
+            "/home/grahamingokho/code/airtime-fsm/src/test/java",
+            "/home/grahamingokho/code/airtime-fsm/target/scala-2.12/src_managed/test"
+        ],
+        "dependencies" : [
+            "airtime-fsm"
+        ],
+        "classpath" : [
+            "/home/grahamingokho/code/airtime-fsm/.bloop/airtime-fsm/scala-2.12/classes",
+            "/home/grahamingokho/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar",
+            "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/jars/akka-actor_2.12-2.6.0-M2.jar",
+            "/home/grahamingokho/.ivy2/cache/com.typesafe/config/bundles/config-1.3.4.jar",
+            "/home/grahamingokho/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.12/jars/akka-slf4j_2.12-2.6.0-M2.jar",
+            "/home/grahamingokho/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar",
+            "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-stream_2.12/jars/akka-stream_2.12-2.6.0-M2.jar",
+            "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.12/jars/akka-protobuf_2.12-2.6.0-M2.jar",
+            "/home/grahamingokho/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.2.jar",
+            "/home/grahamingokho/.ivy2/cache/com.typesafe/ssl-config-core_2.12/bundles/ssl-config-core_2.12-0.3.7.jar",
+            "/home/grahamingokho/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.1.1.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.firebase/firebase-admin/jars/firebase-admin-6.7.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.api-client/google-api-client/jars/google-api-client-1.25.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.oauth-client/google-oauth-client/jars/google-oauth-client-1.25.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.http-client/google-http-client/jars/google-http-client-1.25.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.2.jar",
+            "/home/grahamingokho/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.5.5.jar",
+            "/home/grahamingokho/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.4.9.jar",
+            "/home/grahamingokho/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.2.jar",
+            "/home/grahamingokho/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.j2objc/j2objc-annotations/jars/j2objc-annotations-1.1.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.http-client/google-http-client-jackson2/jars/google-http-client-jackson2-1.25.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.9.6.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.guava/guava/bundles/guava-20.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.api-client/google-api-client-gson/jars/google-api-client-gson-1.25.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.http-client/google-http-client-gson/jars/google-http-client-gson-1.25.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.code.gson/gson/jars/gson-2.8.2.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.api/api-common/jars/api-common-1.7.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.auth/google-auth-library-oauth2-http/jars/google-auth-library-oauth2-http-0.11.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.auth/google-auth-library-credentials/jars/google-auth-library-credentials-0.11.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.cloud/google-cloud-storage/jars/google-cloud-storage-1.43.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.cloud/google-cloud-core/jars/google-cloud-core-1.43.0.jar",
+            "/home/grahamingokho/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.2.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.api/gax/jars/gax-1.30.0.jar",
+            "/home/grahamingokho/.ivy2/cache/org.threeten/threetenbp/jars/threetenbp-1.3.3.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.protobuf/protobuf-java-util/bundles/protobuf-java-util-3.6.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-3.6.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.api.grpc/proto-google-common-protos/jars/proto-google-common-protos-1.12.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.api.grpc/proto-google-iam-v1/jars/proto-google-iam-v1-0.12.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.cloud/google-cloud-core-http/jars/google-cloud-core-http-1.43.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.http-client/google-http-client-appengine/jars/google-http-client-appengine-1.24.1.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.http-client/google-http-client-jackson/jars/google-http-client-jackson-1.24.1.jar",
+            "/home/grahamingokho/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/jars/jackson-core-asl-1.9.11.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.api/gax-httpjson/jars/gax-httpjson-0.47.0.jar",
+            "/home/grahamingokho/.ivy2/cache/io.opencensus/opencensus-api/jars/opencensus-api-0.15.0.jar",
+            "/home/grahamingokho/.ivy2/cache/io.opencensus/opencensus-contrib-http-util/jars/opencensus-contrib-http-util-0.15.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.apis/google-api-services-storage/jars/google-api-services-storage-v1-rev135-1.24.1.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.cloud/google-cloud-firestore/jars/google-cloud-firestore-0.61.0-beta.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.cloud/google-cloud-core-grpc/jars/google-cloud-core-grpc-1.43.0.jar",
+            "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-protobuf/jars/grpc-protobuf-1.13.1.jar",
+            "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-core/jars/grpc-core-1.13.1.jar",
+            "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-context/jars/grpc-context-1.13.1.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.errorprone/error_prone_annotations/jars/error_prone_annotations-2.1.2.jar",
+            "/home/grahamingokho/.ivy2/cache/io.opencensus/opencensus-contrib-grpc-metrics/jars/opencensus-contrib-grpc-metrics-0.12.3.jar",
+            "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-protobuf-lite/jars/grpc-protobuf-lite-1.13.1.jar",
+            "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-netty-shaded/jars/grpc-netty-shaded-1.13.1.jar",
+            "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-stub/jars/grpc-stub-1.13.1.jar",
+            "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-auth/jars/grpc-auth-1.13.1.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.api/gax-grpc/jars/gax-grpc-1.30.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.api.grpc/proto-google-cloud-firestore-v1beta1/jars/proto-google-cloud-firestore-v1beta1-0.26.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.google.auto.value/auto-value/jars/auto-value-1.4.jar",
+            "/home/grahamingokho/.ivy2/cache/io.opencensus/opencensus-contrib-grpc-util/jars/opencensus-contrib-grpc-util-0.15.0.jar",
+            "/home/grahamingokho/.ivy2/cache/org.json/json/bundles/json-20160810.jar",
+            "/home/grahamingokho/.ivy2/cache/io.netty/netty-codec-http/jars/netty-codec-http-4.1.22.Final.jar",
+            "/home/grahamingokho/.ivy2/cache/io.netty/netty-codec/jars/netty-codec-4.1.22.Final.jar",
+            "/home/grahamingokho/.ivy2/cache/io.netty/netty-transport/jars/netty-transport-4.1.22.Final.jar",
+            "/home/grahamingokho/.ivy2/cache/io.netty/netty-buffer/jars/netty-buffer-4.1.22.Final.jar",
+            "/home/grahamingokho/.ivy2/cache/io.netty/netty-common/jars/netty-common-4.1.22.Final.jar",
+            "/home/grahamingokho/.ivy2/cache/io.netty/netty-resolver/jars/netty-resolver-4.1.22.Final.jar",
+            "/home/grahamingokho/.ivy2/cache/io.netty/netty-handler/jars/netty-handler-4.1.22.Final.jar",
+            "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-http-core_2.12/jars/akka-http-core_2.12-10.1.8.jar",
+            "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-parsing_2.12/jars/akka-parsing_2.12-10.1.8.jar",
+            "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-http-spray-json_2.12/jars/akka-http-spray-json_2.12-10.1.8.jar",
+            "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-http_2.12/jars/akka-http_2.12-10.1.8.jar",
+            "/home/grahamingokho/.ivy2/cache/io.spray/spray-json_2.12/jars/spray-json_2.12-1.3.5.jar",
+            "/home/grahamingokho/.ivy2/cache/com.africastalking/core/jars/core-3.4.0.jar",
+            "/home/grahamingokho/.ivy2/cache/br.com.digidev.messenger4j/messenger4j/jars/messenger4j-0.1.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.squareup.okhttp3/okhttp/jars/okhttp-3.9.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.squareup.okio/okio/jars/okio-1.13.0.jar",
+            "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-testkit_2.12/jars/akka-testkit_2.12-2.6.0-M2.jar",
+            "/home/grahamingokho/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.12.8.jar",
+            "/home/grahamingokho/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar",
+            "/home/grahamingokho/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar",
+            "/home/grahamingokho/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.3.jar",
+            "/home/grahamingokho/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.3.jar",
+            "/home/grahamingokho/.ivy2/cache/org.scalatest/scalatest_2.12/bundles/scalatest_2.12-3.0.5.jar",
+            "/home/grahamingokho/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.5.jar"
+        ],
+        "out" : "/home/grahamingokho/code/airtime-fsm/.bloop/airtime-fsm",
+        "classesDir" : "/home/grahamingokho/code/airtime-fsm/.bloop/airtime-fsm/scala-2.12/test-classes",
+        "resources" : [
+            "/home/grahamingokho/code/airtime-fsm/src/test/resources",
+            "/home/grahamingokho/code/airtime-fsm/target/scala-2.12/resource_managed/test"
+        ],
+        "scala" : {
+            "organization" : "org.scala-lang",
+            "name" : "scala-compiler",
+            "version" : "2.12.8",
+            "options" : [
+                "-P:semanticdb:synthetics:on",
+                "-P:semanticdb:failures:warning",
+                "-P:semanticdb:sourceroot:/home/grahamingokho/code/airtime-fsm",
+                "-Yrangepos",
+                "-Xplugin-require:semanticdb",
+                "-Xplugin:/home/grahamingokho/.ivy2/cache/org.scalameta/semanticdb-scalac_2.12.8/jars/semanticdb-scalac_2.12.8-4.1.9.jar"
+            ],
+            "jars" : [
+                "/home/grahamingokho/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.12.8.jar",
+                "/home/grahamingokho/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar",
+                "/home/grahamingokho/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar",
+                "/home/grahamingokho/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar",
+                "/home/grahamingokho/.ivy2/cache/jline/jline/jars/jline-2.14.6.jar"
+            ],
+            "setup" : {
+                "order" : "mixed",
+                "addLibraryToBootClasspath" : true,
+                "addCompilerToClasspath" : false,
+                "addExtraJarsToClasspath" : false,
+                "manageBootClasspath" : true,
+                "filterLibraryFromClasspath" : true
+            }
+        },
+        "java" : {
+            "options" : [
+            ]
+        },
+        "test" : {
+            "frameworks" : [
+                {
+                    "names" : [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                }
+            ],
+            "options" : {
+                "excludes" : [
+                ],
+                "arguments" : [
+                ]
+            }
+        },
+        "platform" : {
+            "name" : "jvm",
+            "config" : {
+                "home" : "/usr/lib/jvm/java-8-openjdk-amd64/jre",
+                "options" : [
+                ]
+            },
+            "mainClass" : [
+            ]
+        },
+        "resolution" : {
+            "modules" : [
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-library",
+                    "version" : "2.12.8",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-library",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar"
+                        },
+                        {
+                            "name" : "scala-library",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.typesafe.akka",
+                    "name" : "akka-actor_2.12",
+                    "version" : "2.6.0-M2",
+                    "artifacts" : [
+                        {
+                            "name" : "akka-actor_2.12",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/jars/akka-actor_2.12-2.6.0-M2.jar"
+                        },
+                        {
+                            "name" : "akka-actor_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/srcs/akka-actor_2.12-2.6.0-M2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.typesafe",
+                    "name" : "config",
+                    "version" : "1.3.4",
+                    "artifacts" : [
+                        {
+                            "name" : "config",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe/config/bundles/config-1.3.4.jar"
+                        },
+                        {
+                            "name" : "config",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe/config/srcs/config-1.3.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-lang.modules",
+                    "name" : "scala-java8-compat_2.12",
+                    "version" : "0.8.0",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-java8-compat_2.12",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar"
+                        },
+                        {
+                            "name" : "scala-java8-compat_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/srcs/scala-java8-compat_2.12-0.8.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.typesafe.akka",
+                    "name" : "akka-slf4j_2.12",
+                    "version" : "2.6.0-M2",
+                    "artifacts" : [
+                        {
+                            "name" : "akka-slf4j_2.12",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.12/jars/akka-slf4j_2.12-2.6.0-M2.jar"
+                        },
+                        {
+                            "name" : "akka-slf4j_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.12/srcs/akka-slf4j_2.12-2.6.0-M2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.slf4j",
+                    "name" : "slf4j-api",
+                    "version" : "1.7.25",
+                    "artifacts" : [
+                        {
+                            "name" : "slf4j-api",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar"
+                        },
+                        {
+                            "name" : "slf4j-api",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.25-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.typesafe.akka",
+                    "name" : "akka-stream_2.12",
+                    "version" : "2.6.0-M2",
+                    "artifacts" : [
+                        {
+                            "name" : "akka-stream_2.12",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-stream_2.12/jars/akka-stream_2.12-2.6.0-M2.jar"
+                        },
+                        {
+                            "name" : "akka-stream_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-stream_2.12/srcs/akka-stream_2.12-2.6.0-M2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.typesafe.akka",
+                    "name" : "akka-protobuf_2.12",
+                    "version" : "2.6.0-M2",
+                    "artifacts" : [
+                        {
+                            "name" : "akka-protobuf_2.12",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.12/jars/akka-protobuf_2.12-2.6.0-M2.jar"
+                        },
+                        {
+                            "name" : "akka-protobuf_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.12/srcs/akka-protobuf_2.12-2.6.0-M2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.reactivestreams",
+                    "name" : "reactive-streams",
+                    "version" : "1.0.2",
+                    "artifacts" : [
+                        {
+                            "name" : "reactive-streams",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.2.jar"
+                        },
+                        {
+                            "name" : "reactive-streams",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.reactivestreams/reactive-streams/srcs/reactive-streams-1.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.typesafe",
+                    "name" : "ssl-config-core_2.12",
+                    "version" : "0.3.7",
+                    "artifacts" : [
+                        {
+                            "name" : "ssl-config-core_2.12",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe/ssl-config-core_2.12/bundles/ssl-config-core_2.12-0.3.7.jar"
+                        },
+                        {
+                            "name" : "ssl-config-core_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe/ssl-config-core_2.12/srcs/ssl-config-core_2.12-0.3.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-lang.modules",
+                    "name" : "scala-parser-combinators_2.12",
+                    "version" : "1.1.1",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-parser-combinators_2.12",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.1.1.jar"
+                        },
+                        {
+                            "name" : "scala-parser-combinators_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/srcs/scala-parser-combinators_2.12-1.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.firebase",
+                    "name" : "firebase-admin",
+                    "version" : "6.7.0",
+                    "artifacts" : [
+                        {
+                            "name" : "firebase-admin",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.firebase/firebase-admin/jars/firebase-admin-6.7.0.jar"
+                        },
+                        {
+                            "name" : "firebase-admin",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.firebase/firebase-admin/srcs/firebase-admin-6.7.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.api-client",
+                    "name" : "google-api-client",
+                    "version" : "1.25.0",
+                    "artifacts" : [
+                        {
+                            "name" : "google-api-client",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.api-client/google-api-client/jars/google-api-client-1.25.0.jar"
+                        },
+                        {
+                            "name" : "google-api-client",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.api-client/google-api-client/srcs/google-api-client-1.25.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.oauth-client",
+                    "name" : "google-oauth-client",
+                    "version" : "1.25.0",
+                    "artifacts" : [
+                        {
+                            "name" : "google-oauth-client",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.oauth-client/google-oauth-client/jars/google-oauth-client-1.25.0.jar"
+                        },
+                        {
+                            "name" : "google-oauth-client",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.oauth-client/google-oauth-client/srcs/google-oauth-client-1.25.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.http-client",
+                    "name" : "google-http-client",
+                    "version" : "1.25.0",
+                    "artifacts" : [
+                        {
+                            "name" : "google-http-client",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.http-client/google-http-client/jars/google-http-client-1.25.0.jar"
+                        },
+                        {
+                            "name" : "google-http-client",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.http-client/google-http-client/srcs/google-http-client-1.25.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.code.findbugs",
+                    "name" : "jsr305",
+                    "version" : "3.0.2",
+                    "artifacts" : [
+                        {
+                            "name" : "jsr305",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.2.jar"
+                        },
+                        {
+                            "name" : "jsr305",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.code.findbugs/jsr305/srcs/jsr305-3.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.httpcomponents",
+                    "name" : "httpclient",
+                    "version" : "4.5.5",
+                    "artifacts" : [
+                        {
+                            "name" : "httpclient",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.5.5.jar"
+                        },
+                        {
+                            "name" : "httpclient",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.apache.httpcomponents/httpclient/srcs/httpclient-4.5.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.httpcomponents",
+                    "name" : "httpcore",
+                    "version" : "4.4.9",
+                    "artifacts" : [
+                        {
+                            "name" : "httpcore",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.4.9.jar"
+                        },
+                        {
+                            "name" : "httpcore",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.apache.httpcomponents/httpcore/srcs/httpcore-4.4.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-logging",
+                    "name" : "commons-logging",
+                    "version" : "1.2",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-logging",
+                            "path" : "/home/grahamingokho/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.2.jar"
+                        },
+                        {
+                            "name" : "commons-logging",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/commons-logging/commons-logging/srcs/commons-logging-1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-codec",
+                    "name" : "commons-codec",
+                    "version" : "1.10",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-codec",
+                            "path" : "/home/grahamingokho/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar"
+                        },
+                        {
+                            "name" : "commons-codec",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/commons-codec/commons-codec/srcs/commons-codec-1.10-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.j2objc",
+                    "name" : "j2objc-annotations",
+                    "version" : "1.1",
+                    "artifacts" : [
+                        {
+                            "name" : "j2objc-annotations",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.j2objc/j2objc-annotations/jars/j2objc-annotations-1.1.jar"
+                        },
+                        {
+                            "name" : "j2objc-annotations",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.j2objc/j2objc-annotations/srcs/j2objc-annotations-1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.http-client",
+                    "name" : "google-http-client-jackson2",
+                    "version" : "1.25.0",
+                    "artifacts" : [
+                        {
+                            "name" : "google-http-client-jackson2",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.http-client/google-http-client-jackson2/jars/google-http-client-jackson2-1.25.0.jar"
+                        },
+                        {
+                            "name" : "google-http-client-jackson2",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.http-client/google-http-client-jackson2/srcs/google-http-client-jackson2-1.25.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.core",
+                    "name" : "jackson-core",
+                    "version" : "2.9.6",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-core",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.9.6.jar"
+                        },
+                        {
+                            "name" : "jackson-core",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/srcs/jackson-core-2.9.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.guava",
+                    "name" : "guava",
+                    "version" : "20.0",
+                    "artifacts" : [
+                        {
+                            "name" : "guava",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.guava/guava/bundles/guava-20.0.jar"
+                        },
+                        {
+                            "name" : "guava",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.guava/guava/srcs/guava-20.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.api-client",
+                    "name" : "google-api-client-gson",
+                    "version" : "1.25.0",
+                    "artifacts" : [
+                        {
+                            "name" : "google-api-client-gson",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.api-client/google-api-client-gson/jars/google-api-client-gson-1.25.0.jar"
+                        },
+                        {
+                            "name" : "google-api-client-gson",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.api-client/google-api-client-gson/srcs/google-api-client-gson-1.25.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.http-client",
+                    "name" : "google-http-client-gson",
+                    "version" : "1.25.0",
+                    "artifacts" : [
+                        {
+                            "name" : "google-http-client-gson",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.http-client/google-http-client-gson/jars/google-http-client-gson-1.25.0.jar"
+                        },
+                        {
+                            "name" : "google-http-client-gson",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.http-client/google-http-client-gson/srcs/google-http-client-gson-1.25.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.api",
+                    "name" : "api-common",
+                    "version" : "1.7.0",
+                    "artifacts" : [
+                        {
+                            "name" : "api-common",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.api/api-common/jars/api-common-1.7.0.jar"
+                        },
+                        {
+                            "name" : "api-common",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.api/api-common/srcs/api-common-1.7.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.auth",
+                    "name" : "google-auth-library-oauth2-http",
+                    "version" : "0.11.0",
+                    "artifacts" : [
+                        {
+                            "name" : "google-auth-library-oauth2-http",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.auth/google-auth-library-oauth2-http/jars/google-auth-library-oauth2-http-0.11.0.jar"
+                        },
+                        {
+                            "name" : "google-auth-library-oauth2-http",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.auth/google-auth-library-oauth2-http/srcs/google-auth-library-oauth2-http-0.11.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.auth",
+                    "name" : "google-auth-library-credentials",
+                    "version" : "0.11.0",
+                    "artifacts" : [
+                        {
+                            "name" : "google-auth-library-credentials",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.auth/google-auth-library-credentials/jars/google-auth-library-credentials-0.11.0.jar"
+                        },
+                        {
+                            "name" : "google-auth-library-credentials",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.auth/google-auth-library-credentials/srcs/google-auth-library-credentials-0.11.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.cloud",
+                    "name" : "google-cloud-storage",
+                    "version" : "1.43.0",
+                    "artifacts" : [
+                        {
+                            "name" : "google-cloud-storage",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.cloud/google-cloud-storage/jars/google-cloud-storage-1.43.0.jar"
+                        },
+                        {
+                            "name" : "google-cloud-storage",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.cloud/google-cloud-storage/srcs/google-cloud-storage-1.43.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.cloud",
+                    "name" : "google-cloud-core",
+                    "version" : "1.43.0",
+                    "artifacts" : [
+                        {
+                            "name" : "google-cloud-core",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.cloud/google-cloud-core/jars/google-cloud-core-1.43.0.jar"
+                        },
+                        {
+                            "name" : "google-cloud-core",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.cloud/google-cloud-core/srcs/google-cloud-core-1.43.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "joda-time",
+                    "name" : "joda-time",
+                    "version" : "2.9.2",
+                    "artifacts" : [
+                        {
+                            "name" : "joda-time",
+                            "path" : "/home/grahamingokho/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.2.jar"
+                        },
+                        {
+                            "name" : "joda-time",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.9.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.api",
+                    "name" : "gax",
+                    "version" : "1.30.0",
+                    "artifacts" : [
+                        {
+                            "name" : "gax",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.api/gax/jars/gax-1.30.0.jar"
+                        },
+                        {
+                            "name" : "gax",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.api/gax/srcs/gax-1.30.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.threeten",
+                    "name" : "threetenbp",
+                    "version" : "1.3.3",
+                    "artifacts" : [
+                        {
+                            "name" : "threetenbp",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.threeten/threetenbp/jars/threetenbp-1.3.3.jar"
+                        },
+                        {
+                            "name" : "threetenbp",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.threeten/threetenbp/srcs/threetenbp-1.3.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.protobuf",
+                    "name" : "protobuf-java-util",
+                    "version" : "3.6.0",
+                    "artifacts" : [
+                        {
+                            "name" : "protobuf-java-util",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.protobuf/protobuf-java-util/bundles/protobuf-java-util-3.6.0.jar"
+                        },
+                        {
+                            "name" : "protobuf-java-util",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.protobuf/protobuf-java-util/srcs/protobuf-java-util-3.6.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.protobuf",
+                    "name" : "protobuf-java",
+                    "version" : "3.6.0",
+                    "artifacts" : [
+                        {
+                            "name" : "protobuf-java",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-3.6.0.jar"
+                        },
+                        {
+                            "name" : "protobuf-java",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.protobuf/protobuf-java/srcs/protobuf-java-3.6.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.api.grpc",
+                    "name" : "proto-google-common-protos",
+                    "version" : "1.12.0",
+                    "artifacts" : [
+                        {
+                            "name" : "proto-google-common-protos",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.api.grpc/proto-google-common-protos/jars/proto-google-common-protos-1.12.0.jar"
+                        },
+                        {
+                            "name" : "proto-google-common-protos",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.api.grpc/proto-google-common-protos/srcs/proto-google-common-protos-1.12.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.api.grpc",
+                    "name" : "proto-google-iam-v1",
+                    "version" : "0.12.0",
+                    "artifacts" : [
+                        {
+                            "name" : "proto-google-iam-v1",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.api.grpc/proto-google-iam-v1/jars/proto-google-iam-v1-0.12.0.jar"
+                        },
+                        {
+                            "name" : "proto-google-iam-v1",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.api.grpc/proto-google-iam-v1/srcs/proto-google-iam-v1-0.12.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.cloud",
+                    "name" : "google-cloud-core-http",
+                    "version" : "1.43.0",
+                    "artifacts" : [
+                        {
+                            "name" : "google-cloud-core-http",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.cloud/google-cloud-core-http/jars/google-cloud-core-http-1.43.0.jar"
+                        },
+                        {
+                            "name" : "google-cloud-core-http",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.cloud/google-cloud-core-http/srcs/google-cloud-core-http-1.43.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.http-client",
+                    "name" : "google-http-client-appengine",
+                    "version" : "1.24.1",
+                    "artifacts" : [
+                        {
+                            "name" : "google-http-client-appengine",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.http-client/google-http-client-appengine/jars/google-http-client-appengine-1.24.1.jar"
+                        },
+                        {
+                            "name" : "google-http-client-appengine",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.http-client/google-http-client-appengine/srcs/google-http-client-appengine-1.24.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.http-client",
+                    "name" : "google-http-client-jackson",
+                    "version" : "1.24.1",
+                    "artifacts" : [
+                        {
+                            "name" : "google-http-client-jackson",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.http-client/google-http-client-jackson/jars/google-http-client-jackson-1.24.1.jar"
+                        },
+                        {
+                            "name" : "google-http-client-jackson",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.http-client/google-http-client-jackson/srcs/google-http-client-jackson-1.24.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.codehaus.jackson",
+                    "name" : "jackson-core-asl",
+                    "version" : "1.9.11",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-core-asl",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/jars/jackson-core-asl-1.9.11.jar"
+                        },
+                        {
+                            "name" : "jackson-core-asl",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/srcs/jackson-core-asl-1.9.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.api",
+                    "name" : "gax-httpjson",
+                    "version" : "0.47.0",
+                    "artifacts" : [
+                        {
+                            "name" : "gax-httpjson",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.api/gax-httpjson/jars/gax-httpjson-0.47.0.jar"
+                        },
+                        {
+                            "name" : "gax-httpjson",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.api/gax-httpjson/srcs/gax-httpjson-0.47.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.opencensus",
+                    "name" : "opencensus-api",
+                    "version" : "0.15.0",
+                    "artifacts" : [
+                        {
+                            "name" : "opencensus-api",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.opencensus/opencensus-api/jars/opencensus-api-0.15.0.jar"
+                        },
+                        {
+                            "name" : "opencensus-api",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.opencensus/opencensus-api/srcs/opencensus-api-0.15.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.opencensus",
+                    "name" : "opencensus-contrib-http-util",
+                    "version" : "0.15.0",
+                    "artifacts" : [
+                        {
+                            "name" : "opencensus-contrib-http-util",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.opencensus/opencensus-contrib-http-util/jars/opencensus-contrib-http-util-0.15.0.jar"
+                        },
+                        {
+                            "name" : "opencensus-contrib-http-util",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.opencensus/opencensus-contrib-http-util/srcs/opencensus-contrib-http-util-0.15.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.apis",
+                    "name" : "google-api-services-storage",
+                    "version" : "v1-rev135-1.24.1",
+                    "artifacts" : [
+                        {
+                            "name" : "google-api-services-storage",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.apis/google-api-services-storage/jars/google-api-services-storage-v1-rev135-1.24.1.jar"
+                        },
+                        {
+                            "name" : "google-api-services-storage",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.apis/google-api-services-storage/srcs/google-api-services-storage-v1-rev135-1.24.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.cloud",
+                    "name" : "google-cloud-firestore",
+                    "version" : "0.61.0-beta",
+                    "artifacts" : [
+                        {
+                            "name" : "google-cloud-firestore",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.cloud/google-cloud-firestore/jars/google-cloud-firestore-0.61.0-beta.jar"
+                        },
+                        {
+                            "name" : "google-cloud-firestore",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.cloud/google-cloud-firestore/srcs/google-cloud-firestore-0.61.0-beta-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.cloud",
+                    "name" : "google-cloud-core-grpc",
+                    "version" : "1.43.0",
+                    "artifacts" : [
+                        {
+                            "name" : "google-cloud-core-grpc",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.cloud/google-cloud-core-grpc/jars/google-cloud-core-grpc-1.43.0.jar"
+                        },
+                        {
+                            "name" : "google-cloud-core-grpc",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.cloud/google-cloud-core-grpc/srcs/google-cloud-core-grpc-1.43.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.grpc",
+                    "name" : "grpc-protobuf",
+                    "version" : "1.13.1",
+                    "artifacts" : [
+                        {
+                            "name" : "grpc-protobuf",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-protobuf/jars/grpc-protobuf-1.13.1.jar"
+                        },
+                        {
+                            "name" : "grpc-protobuf",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-protobuf/srcs/grpc-protobuf-1.13.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.grpc",
+                    "name" : "grpc-core",
+                    "version" : "1.13.1",
+                    "artifacts" : [
+                        {
+                            "name" : "grpc-core",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-core/jars/grpc-core-1.13.1.jar"
+                        },
+                        {
+                            "name" : "grpc-core",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-core/srcs/grpc-core-1.13.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.grpc",
+                    "name" : "grpc-context",
+                    "version" : "1.13.1",
+                    "artifacts" : [
+                        {
+                            "name" : "grpc-context",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-context/jars/grpc-context-1.13.1.jar"
+                        },
+                        {
+                            "name" : "grpc-context",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-context/srcs/grpc-context-1.13.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.errorprone",
+                    "name" : "error_prone_annotations",
+                    "version" : "2.1.2",
+                    "artifacts" : [
+                        {
+                            "name" : "error_prone_annotations",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.errorprone/error_prone_annotations/jars/error_prone_annotations-2.1.2.jar"
+                        },
+                        {
+                            "name" : "error_prone_annotations",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.errorprone/error_prone_annotations/srcs/error_prone_annotations-2.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.opencensus",
+                    "name" : "opencensus-contrib-grpc-metrics",
+                    "version" : "0.12.3",
+                    "artifacts" : [
+                        {
+                            "name" : "opencensus-contrib-grpc-metrics",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.opencensus/opencensus-contrib-grpc-metrics/jars/opencensus-contrib-grpc-metrics-0.12.3.jar"
+                        },
+                        {
+                            "name" : "opencensus-contrib-grpc-metrics",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.opencensus/opencensus-contrib-grpc-metrics/srcs/opencensus-contrib-grpc-metrics-0.12.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.grpc",
+                    "name" : "grpc-protobuf-lite",
+                    "version" : "1.13.1",
+                    "artifacts" : [
+                        {
+                            "name" : "grpc-protobuf-lite",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-protobuf-lite/jars/grpc-protobuf-lite-1.13.1.jar"
+                        },
+                        {
+                            "name" : "grpc-protobuf-lite",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-protobuf-lite/srcs/grpc-protobuf-lite-1.13.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.grpc",
+                    "name" : "grpc-netty-shaded",
+                    "version" : "1.13.1",
+                    "artifacts" : [
+                        {
+                            "name" : "grpc-netty-shaded",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-netty-shaded/jars/grpc-netty-shaded-1.13.1.jar"
+                        },
+                        {
+                            "name" : "grpc-netty-shaded",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-netty-shaded/srcs/grpc-netty-shaded-1.13.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.grpc",
+                    "name" : "grpc-stub",
+                    "version" : "1.13.1",
+                    "artifacts" : [
+                        {
+                            "name" : "grpc-stub",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-stub/jars/grpc-stub-1.13.1.jar"
+                        },
+                        {
+                            "name" : "grpc-stub",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-stub/srcs/grpc-stub-1.13.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.grpc",
+                    "name" : "grpc-auth",
+                    "version" : "1.13.1",
+                    "artifacts" : [
+                        {
+                            "name" : "grpc-auth",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-auth/jars/grpc-auth-1.13.1.jar"
+                        },
+                        {
+                            "name" : "grpc-auth",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.grpc/grpc-auth/srcs/grpc-auth-1.13.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.api",
+                    "name" : "gax-grpc",
+                    "version" : "1.30.0",
+                    "artifacts" : [
+                        {
+                            "name" : "gax-grpc",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.api/gax-grpc/jars/gax-grpc-1.30.0.jar"
+                        },
+                        {
+                            "name" : "gax-grpc",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.api/gax-grpc/srcs/gax-grpc-1.30.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.api.grpc",
+                    "name" : "proto-google-cloud-firestore-v1beta1",
+                    "version" : "0.26.0",
+                    "artifacts" : [
+                        {
+                            "name" : "proto-google-cloud-firestore-v1beta1",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.api.grpc/proto-google-cloud-firestore-v1beta1/jars/proto-google-cloud-firestore-v1beta1-0.26.0.jar"
+                        },
+                        {
+                            "name" : "proto-google-cloud-firestore-v1beta1",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.api.grpc/proto-google-cloud-firestore-v1beta1/srcs/proto-google-cloud-firestore-v1beta1-0.26.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.auto.value",
+                    "name" : "auto-value",
+                    "version" : "1.4",
+                    "artifacts" : [
+                        {
+                            "name" : "auto-value",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.auto.value/auto-value/jars/auto-value-1.4.jar"
+                        },
+                        {
+                            "name" : "auto-value",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.auto.value/auto-value/srcs/auto-value-1.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.opencensus",
+                    "name" : "opencensus-contrib-grpc-util",
+                    "version" : "0.15.0",
+                    "artifacts" : [
+                        {
+                            "name" : "opencensus-contrib-grpc-util",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.opencensus/opencensus-contrib-grpc-util/jars/opencensus-contrib-grpc-util-0.15.0.jar"
+                        },
+                        {
+                            "name" : "opencensus-contrib-grpc-util",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.opencensus/opencensus-contrib-grpc-util/srcs/opencensus-contrib-grpc-util-0.15.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.json",
+                    "name" : "json",
+                    "version" : "20160810",
+                    "artifacts" : [
+                        {
+                            "name" : "json",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.json/json/bundles/json-20160810.jar"
+                        },
+                        {
+                            "name" : "json",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.json/json/srcs/json-20160810-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.netty",
+                    "name" : "netty-codec-http",
+                    "version" : "4.1.22.Final",
+                    "artifacts" : [
+                        {
+                            "name" : "netty-codec-http",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.netty/netty-codec-http/jars/netty-codec-http-4.1.22.Final.jar"
+                        },
+                        {
+                            "name" : "netty-codec-http",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.netty/netty-codec-http/srcs/netty-codec-http-4.1.22.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.netty",
+                    "name" : "netty-codec",
+                    "version" : "4.1.22.Final",
+                    "artifacts" : [
+                        {
+                            "name" : "netty-codec",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.netty/netty-codec/jars/netty-codec-4.1.22.Final.jar"
+                        },
+                        {
+                            "name" : "netty-codec",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.netty/netty-codec/srcs/netty-codec-4.1.22.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.netty",
+                    "name" : "netty-transport",
+                    "version" : "4.1.22.Final",
+                    "artifacts" : [
+                        {
+                            "name" : "netty-transport",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.netty/netty-transport/jars/netty-transport-4.1.22.Final.jar"
+                        },
+                        {
+                            "name" : "netty-transport",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.netty/netty-transport/srcs/netty-transport-4.1.22.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.netty",
+                    "name" : "netty-buffer",
+                    "version" : "4.1.22.Final",
+                    "artifacts" : [
+                        {
+                            "name" : "netty-buffer",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.netty/netty-buffer/jars/netty-buffer-4.1.22.Final.jar"
+                        },
+                        {
+                            "name" : "netty-buffer",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.netty/netty-buffer/srcs/netty-buffer-4.1.22.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.netty",
+                    "name" : "netty-common",
+                    "version" : "4.1.22.Final",
+                    "artifacts" : [
+                        {
+                            "name" : "netty-common",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.netty/netty-common/jars/netty-common-4.1.22.Final.jar"
+                        },
+                        {
+                            "name" : "netty-common",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.netty/netty-common/srcs/netty-common-4.1.22.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.netty",
+                    "name" : "netty-resolver",
+                    "version" : "4.1.22.Final",
+                    "artifacts" : [
+                        {
+                            "name" : "netty-resolver",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.netty/netty-resolver/jars/netty-resolver-4.1.22.Final.jar"
+                        },
+                        {
+                            "name" : "netty-resolver",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.netty/netty-resolver/srcs/netty-resolver-4.1.22.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.netty",
+                    "name" : "netty-handler",
+                    "version" : "4.1.22.Final",
+                    "artifacts" : [
+                        {
+                            "name" : "netty-handler",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.netty/netty-handler/jars/netty-handler-4.1.22.Final.jar"
+                        },
+                        {
+                            "name" : "netty-handler",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.netty/netty-handler/srcs/netty-handler-4.1.22.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.code.gson",
+                    "name" : "gson",
+                    "version" : "2.8.2",
+                    "artifacts" : [
+                        {
+                            "name" : "gson",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.code.gson/gson/jars/gson-2.8.2.jar"
+                        },
+                        {
+                            "name" : "gson",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.google.code.gson/gson/srcs/gson-2.8.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.typesafe.akka",
+                    "name" : "akka-http-core_2.12",
+                    "version" : "10.1.8",
+                    "artifacts" : [
+                        {
+                            "name" : "akka-http-core_2.12",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-http-core_2.12/jars/akka-http-core_2.12-10.1.8.jar"
+                        },
+                        {
+                            "name" : "akka-http-core_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-http-core_2.12/srcs/akka-http-core_2.12-10.1.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.typesafe.akka",
+                    "name" : "akka-parsing_2.12",
+                    "version" : "10.1.8",
+                    "artifacts" : [
+                        {
+                            "name" : "akka-parsing_2.12",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-parsing_2.12/jars/akka-parsing_2.12-10.1.8.jar"
+                        },
+                        {
+                            "name" : "akka-parsing_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-parsing_2.12/srcs/akka-parsing_2.12-10.1.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.typesafe.akka",
+                    "name" : "akka-http-spray-json_2.12",
+                    "version" : "10.1.8",
+                    "artifacts" : [
+                        {
+                            "name" : "akka-http-spray-json_2.12",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-http-spray-json_2.12/jars/akka-http-spray-json_2.12-10.1.8.jar"
+                        },
+                        {
+                            "name" : "akka-http-spray-json_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-http-spray-json_2.12/srcs/akka-http-spray-json_2.12-10.1.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.typesafe.akka",
+                    "name" : "akka-http_2.12",
+                    "version" : "10.1.8",
+                    "artifacts" : [
+                        {
+                            "name" : "akka-http_2.12",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-http_2.12/jars/akka-http_2.12-10.1.8.jar"
+                        },
+                        {
+                            "name" : "akka-http_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-http_2.12/srcs/akka-http_2.12-10.1.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.spray",
+                    "name" : "spray-json_2.12",
+                    "version" : "1.3.5",
+                    "artifacts" : [
+                        {
+                            "name" : "spray-json_2.12",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.spray/spray-json_2.12/jars/spray-json_2.12-1.3.5.jar"
+                        },
+                        {
+                            "name" : "spray-json_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/io.spray/spray-json_2.12/srcs/spray-json_2.12-1.3.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.africastalking",
+                    "name" : "core",
+                    "version" : "3.4.0",
+                    "artifacts" : [
+                        {
+                            "name" : "core",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.africastalking/core/jars/core-3.4.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "br.com.digidev.messenger4j",
+                    "name" : "messenger4j",
+                    "version" : "0.1.0",
+                    "artifacts" : [
+                        {
+                            "name" : "messenger4j",
+                            "path" : "/home/grahamingokho/.ivy2/cache/br.com.digidev.messenger4j/messenger4j/jars/messenger4j-0.1.0.jar"
+                        },
+                        {
+                            "name" : "messenger4j",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/br.com.digidev.messenger4j/messenger4j/srcs/messenger4j-0.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.squareup.okhttp3",
+                    "name" : "okhttp",
+                    "version" : "3.9.0",
+                    "artifacts" : [
+                        {
+                            "name" : "okhttp",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.squareup.okhttp3/okhttp/jars/okhttp-3.9.0.jar"
+                        },
+                        {
+                            "name" : "okhttp",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.squareup.okhttp3/okhttp/srcs/okhttp-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.squareup.okio",
+                    "name" : "okio",
+                    "version" : "1.13.0",
+                    "artifacts" : [
+                        {
+                            "name" : "okio",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.squareup.okio/okio/jars/okio-1.13.0.jar"
+                        },
+                        {
+                            "name" : "okio",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.squareup.okio/okio/srcs/okio-1.13.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.typesafe.akka",
+                    "name" : "akka-testkit_2.12",
+                    "version" : "2.6.0-M2",
+                    "artifacts" : [
+                        {
+                            "name" : "akka-testkit_2.12",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-testkit_2.12/jars/akka-testkit_2.12-2.6.0-M2.jar"
+                        },
+                        {
+                            "name" : "akka-testkit_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/com.typesafe.akka/akka-testkit_2.12/srcs/akka-testkit_2.12-2.6.0-M2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-compiler",
+                    "version" : "2.12.8",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-compiler",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.12.8.jar"
+                        },
+                        {
+                            "name" : "scala-compiler",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.scala-lang/scala-compiler/srcs/scala-compiler-2.12.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-reflect",
+                    "version" : "2.12.8",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-reflect",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar"
+                        },
+                        {
+                            "name" : "scala-reflect",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.12.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-lang.modules",
+                    "name" : "scala-xml_2.12",
+                    "version" : "1.0.6",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-xml_2.12",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar"
+                        },
+                        {
+                            "name" : "scala-xml_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/srcs/scala-xml_2.12-1.0.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "ch.qos.logback",
+                    "name" : "logback-classic",
+                    "version" : "1.1.3",
+                    "artifacts" : [
+                        {
+                            "name" : "logback-classic",
+                            "path" : "/home/grahamingokho/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.3.jar"
+                        },
+                        {
+                            "name" : "logback-classic",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/ch.qos.logback/logback-classic/srcs/logback-classic-1.1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "ch.qos.logback",
+                    "name" : "logback-core",
+                    "version" : "1.1.3",
+                    "artifacts" : [
+                        {
+                            "name" : "logback-core",
+                            "path" : "/home/grahamingokho/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.3.jar"
+                        },
+                        {
+                            "name" : "logback-core",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/ch.qos.logback/logback-core/srcs/logback-core-1.1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scalatest",
+                    "name" : "scalatest_2.12",
+                    "version" : "3.0.5",
+                    "artifacts" : [
+                        {
+                            "name" : "scalatest_2.12",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.scalatest/scalatest_2.12/bundles/scalatest_2.12-3.0.5.jar"
+                        },
+                        {
+                            "name" : "scalatest_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.scalatest/scalatest_2.12/srcs/scalatest_2.12-3.0.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scalactic",
+                    "name" : "scalactic_2.12",
+                    "version" : "3.0.5",
+                    "artifacts" : [
+                        {
+                            "name" : "scalactic_2.12",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.5.jar"
+                        },
+                        {
+                            "name" : "scalactic_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/grahamingokho/.ivy2/cache/org.scalactic/scalactic_2.12/srcs/scalactic_2.12-3.0.5-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
