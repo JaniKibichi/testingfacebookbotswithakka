@@ -4,7 +4,7 @@ import scala.concurrent.{ExecutionContext,Future}
 import akka.http.scaladsl.model.{StatusCode,HttpHeader,StatusCodes}
 import akka.actor.ActorSystem
 import akka.stream.ActorMaterializer
-import com.janikibichi.models.EventMarshalling
+import com.janikibichi.models.{EventMarshalling,Distributor}
 import MessengerBot._
 import com.janikibichi.utils.HttpClient._
 import spray.json._

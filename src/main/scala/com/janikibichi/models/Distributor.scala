@@ -11,9 +11,13 @@ import com.janikibichi.utils.{MessengerBot,FacebookService}
 object Distributor{
     def props(implicit timeout:Timeout) = Props(new Distributor)
     def name = "distributor"
-    final case class CreateMenu(facebookPayloadObject: MessengerBot.FacebookPayloadObject)
-    final case class Menu(title:String,body:String,options:String,menuLevel:String)
-    final case class Menus(menus: Vector[Menu])
+
+    case class CreateMenu(facebookPayloadObject: MessengerBot.FacebookPayloadObject)
+    case class CreateSeller(sellerId: String)
+
+    case class Menu(title:String,body:String,options:String,menuLevel:String)
+    case class Menus(menus: Vector[Menu])
+
     sealed trait MenuResponse
     case class MenuCreated(menu: Menu) extends MenuResponse
     case object MenuNotCreated extends MenuResponse
@@ -24,22 +28,18 @@ class Distributor(implicit timeout: Timeout) extends Actor with ActorLogging{
     import Distributor._
     import context._
 
-    protected implicit def executioncontext: ExecutionContext
-    protected implicit val materializer: ActorMaterializer
-
     def createAirtimeSeller(name:String) = context.actorOf(AirtimeSeller.props(name),AirtimeSeller.name)
-
+    
     def receive: Actor.Receive = {
         case CreateMenu(facebookPayloadObject) =>
-            log.info("Getting apppropriate menu")
-            val expectingnone:  Option[Either[String,String]] = FacebookService.handleMessage(facebookPayloadObject)
+            //parse payload
 
-            if(expectingnone.getOrElse("ExpectedResponse").equals("ExpectedResponse")){
 
+        case CreateSeller(sellerId) =>
+            log.info("Seller created")
+            def create() ={
+                val airtimeseller = createAirtimeSeller(sellerId)
             }
 
-            lazy val airtimeSeller = createAirtimeSeller(senderID)
-            val menuFuture = airtimeSeller.ask(CreateMenu(userInput,senderID)).mapTo[MenuResponse]
-            sender() ! Await.result(menuFuture,5.seconds)
     }
 }

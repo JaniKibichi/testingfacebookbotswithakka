@@ -6,11 +6,13 @@ import akka.util.Timeout
 import scala.concurrent.ExecutionContext
 import com.janikibichi.routes._
 import com.janikibichi.utils._
+import akka.stream.ActorMaterializer
 
 
 class RestApi(system: ActorSystem, timeout: Timeout) extends RestRoutes{
     implicit val requestTimeout = timeout
     implicit def executionContext = system.dispatcher
+
     def createDistributor    = system.actorOf(Distributor.props,Distributor.name)
     def createVerifyFacebook = system.actorOf(VerifyFacebook.props, VerifyFacebook.name)
 }

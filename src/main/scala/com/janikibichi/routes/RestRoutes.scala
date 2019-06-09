@@ -14,12 +14,12 @@ import akka.http.scaladsl.model.{StatusCode,HttpHeader,StatusCodes}
 import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport._
 import akka.http.scaladsl.model.HttpRequest
 import com.janikibichi.utils.MessengerBot
+import akka.stream.ActorMaterializer
 
 trait RestRoutes extends DistributorApi with EventMarshalling with RouteSupport{
     import StatusCodes._
-
+    
     def routes: Route = facebookVerifyRoute ~ facebookRoute
-
     def facebookVerifyRoute = 
         pathPrefix("facebook"){ 
             pathEndOrSingleSlash{
@@ -51,7 +51,6 @@ trait RestRoutes extends DistributorApi with EventMarshalling with RouteSupport{
                 pathEndOrSingleSlash{
 
                     post{
-
                         //POST /facebook/:facebook
                         entity(as[MessengerBot.FacebookPayloadObject]){ facebookPayloadObject =>
                             onSuccess(createMenu(facebookPayloadObject)){
@@ -66,6 +65,7 @@ trait RestRoutes extends DistributorApi with EventMarshalling with RouteSupport{
                             }
 
                         }
+                        
                     }
                 }
             }
